@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".MainActivity2">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wellcome"
+        android:id="@+id/textviewsssss"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#6EDF0B"
+        android:textSize="25sp"/>
+
+
+
+
+
+     <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play Agine"
+        android:id="@+id/agine"
+         android:padding="10dp"
+        />
+
+
+
+</LinearLayout>

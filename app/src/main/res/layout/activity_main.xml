@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#8F2866"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="90"
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="fill_parent"
+            android:layout_weight="30"
+            android:layout_height="wrap_content"
+            app:lottie_rawRes="@raw/timer"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="true"/>
+        <TextView
+
+            android:layout_width="fill_parent"
+            android:layout_weight="30"
+            android:layout_height="wrap_content"
+            android:textSize="45sp"
+            android:gravity="center"
+            android:textColor="#F1E6E6"
+            android:text="প্রশ্ন"
+
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:layout_weight="30"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Answer and Qustion"
+            android:textColor="#0CE830"
+
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="90"
+        >
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="fill_parent"
+            android:layout_weight="30"
+            android:layout_height="wrap_content"
+            android:textSize="45sp"
+            android:text="30s"
+            android:textColor="#EC3434"
+            android:gravity="center"
+            />
+        <TextView
+
+            android:layout_width="fill_parent"
+            android:layout_weight="30"
+            android:layout_height="match_parent"
+            android:textSize="45sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="40S"
+            android:id="@+id/sumtextview"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:layout_weight="30"
+            android:layout_height="wrap_content"
+            android:textSize="45sp"
+            android:text="0/0"
+            android:textColor="#0CE830"
+            android:id="@+id/score"
+            />
+
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+
+            <Button
+                android:id="@+id/button0"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_height="150dp"
+                android:backgroundTint="#FFEB3B"
+                android:onClick="choseAnswer"
+                android:tag="0"
+                android:text="go"
+                android:textSize="40sp"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_row="0"
+                app:layout_rowWeight="1" />
+ <Button
+                android:id="@+id/button1"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_height="150dp"
+                android:backgroundTint="#E91E63"
+                android:onClick="choseAnswer"
+                android:tag="1"
+                android:text="go"
+                android:textSize="40sp"
+
+                app:layout_gravity="fill"
+
+                app:layout_row="0"
+                app:layout_rowWeight="1" />
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+
+        >
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="150dp"
+            android:backgroundTint="#03A9F4"
+            android:onClick="choseAnswer"
+            android:tag="2"
+            android:text="go"
+            android:textSize="40sp"
+            app:layout_gravity="fill"
+
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="150dp"
+            android:backgroundTint="#FFEB3B"
+            android:onClick="choseAnswer"
+            android:tag="3"
+            android:text="go"
+            android:textSize="40sp"
+
+            app:layout_gravity="fill"
+
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="120dp"
+        android:weightSum="90"
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="fill_parent"
+            android:layout_weight="30"
+            android:layout_height="match_parent"
+            android:id="@+id/rightanim"
+            app:lottie_rawRes="@raw/right"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            />
+        <TextView
+
+            android:layout_width="fill_parent"
+            android:layout_weight="30"
+            android:layout_height="match_parent"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Answer"
+            android:id="@+id/answer"
+            />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="fill_parent"
+            android:layout_weight="30"
+            android:layout_height="match_parent"
+            app:lottie_rawRes="@raw/wrongjson"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            android:id="@+id/wronganim"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play With Time "
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:id="@+id/playwithtime"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeInput"
+        android:hint="Enter Time"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textColor="@color/black"
+        android:padding="10dp"
+
+
+
+        />
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
